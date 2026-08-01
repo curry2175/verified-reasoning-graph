@@ -1,0 +1,539 @@
+{
+  "schema_version": "0.27.0",
+  "paragraph_summary": "The paragraph reports reduced inflammation followed by slower fibrosis progression, then states that antifibrotic benefit occurred regardless of measurable inflammatory response. It nevertheless concludes from temporal ordering that inflammation suppression is the exclusive mechanism, creating a direct conflict with the preceding claim that inflammation reduction was not necessary.",
+  "model_overall_assessment": "clear_conflict",
+  "overall_assessment": "mixed_concerns",
+  "nodes": [
+    {
+      "id": "d1",
+      "sentence_index": 1,
+      "source_text": "Treatment G reduced inflammatory activity",
+      "plain_meaning": "Treatment G lowered inflammatory activity.",
+      "role": "observation",
+      "assertion_type": "causal",
+      "polarity": "positive",
+      "certainty": "reported",
+      "subject": "Treatment G",
+      "predicate": "reduced",
+      "object": "inflammatory activity",
+      "population_scope": "Treatment G recipients",
+      "time_scope": "During treatment; exact time unspecified",
+      "analysis_population": "Not specified",
+      "estimand": "Effect of Treatment G on inflammatory activity",
+      "causal_role": "exposure",
+      "methodological_role": "none",
+      "numeric_mentions": [],
+      "inferred_details": [
+        "The wording attributes the reduction to Treatment G, although no design details are provided."
+      ],
+      "confidence": 0.97,
+      "why_it_matters": "This is the proposed first step in the later inflammation-mediated pathway.",
+      "normalized_claim": "Treatment G lowered inflammatory activity.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "Treatment G reduced inflammatory activity",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": false,
+      "issue_ids": [],
+      "display_status": "observation"
+    },
+    {
+      "id": "d2",
+      "sentence_index": 1,
+      "source_text": "was followed by slower fibrosis progression",
+      "plain_meaning": "Slower fibrosis progression occurred after the reduction in inflammatory activity.",
+      "role": "observation",
+      "assertion_type": "temporal",
+      "polarity": "positive",
+      "certainty": "reported",
+      "subject": "reduced inflammatory activity",
+      "predicate": "was followed by",
+      "object": "slower fibrosis progression",
+      "population_scope": "Treatment G recipients",
+      "time_scope": "After inflammatory activity was reduced",
+      "analysis_population": "Not specified",
+      "estimand": "Temporal relationship between inflammatory reduction and fibrosis progression",
+      "causal_role": "outcome",
+      "methodological_role": "none",
+      "numeric_mentions": [],
+      "inferred_details": [
+        "The clause establishes temporal ordering but does not itself establish mediation or exclusivity."
+      ],
+      "confidence": 0.98,
+      "why_it_matters": "The temporal ordering is later used as evidence for the claimed mechanism.",
+      "normalized_claim": "Slower fibrosis progression occurred after the reduction in inflammatory activity.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "was followed by slower fibrosis progression",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": true,
+      "issue_ids": [
+        "i3"
+      ],
+      "display_status": "issue"
+    },
+    {
+      "id": "d3",
+      "sentence_index": 2,
+      "source_text": "The antifibrotic effect was observed equally in patients with and without a measurable inflammatory response",
+      "plain_meaning": "Antifibrotic benefit was similar whether or not patients had a measurable inflammatory response.",
+      "role": "evidence",
+      "assertion_type": "subgroup_heterogeneity",
+      "polarity": "negative",
+      "certainty": "observed",
+      "subject": "the antifibrotic effect",
+      "predicate": "was observed equally in",
+      "object": "patients with and without a measurable inflammatory response",
+      "population_scope": "Patients grouped by presence or absence of a measurable inflammatory response",
+      "time_scope": "Not specified",
+      "analysis_population": "Patients with and without a measurable inflammatory response",
+      "estimand": "Difference in antifibrotic effect by measurable inflammatory-response status",
+      "causal_role": "effect_modifier",
+      "methodological_role": "analysis_choice",
+      "numeric_mentions": [],
+      "inferred_details": [
+        "No subgroup estimates, uncertainty measures, or test of interaction are reported."
+      ],
+      "confidence": 0.99,
+      "why_it_matters": "Benefit among patients without a measurable inflammatory response challenges the claim that inflammation suppression is required or exclusive.",
+      "normalized_claim": "Antifibrotic benefit was similar whether or not patients had a measurable inflammatory response.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "The antifibrotic effect was observed equally in patients with and without a measurable inflammatory response",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": true,
+      "issue_ids": [
+        "i1",
+        "i3"
+      ],
+      "display_status": "issue"
+    },
+    {
+      "id": "d4",
+      "sentence_index": 2,
+      "source_text": "suggesting that inflammation reduction was not necessary for benefit",
+      "plain_meaning": "The subgroup observation suggests that benefit can occur without inflammation reduction.",
+      "role": "conclusion",
+      "assertion_type": "necessity",
+      "polarity": "negative",
+      "certainty": "suggests",
+      "subject": "inflammation reduction",
+      "predicate": "was not necessary for",
+      "object": "benefit",
+      "population_scope": "Patients receiving Treatment G",
+      "time_scope": "Not specified",
+      "analysis_population": "Patients with and without a measurable inflammatory response",
+      "estimand": "Necessity of inflammation reduction for treatment benefit",
+      "causal_role": "mediator",
+      "methodological_role": "none",
+      "numeric_mentions": [],
+      "inferred_details": [],
+      "confidence": 0.99,
+      "why_it_matters": "This explicitly denies that inflammation reduction is a required pathway to benefit.",
+      "normalized_claim": "The subgroup observation suggests that benefit can occur without inflammation reduction.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "suggesting that inflammation reduction was not necessary for benefit",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": true,
+      "issue_ids": [
+        "i1",
+        "i3"
+      ],
+      "display_status": "issue"
+    },
+    {
+      "id": "d5",
+      "sentence_index": 3,
+      "source_text": "because inflammation declined before fibrosis improved",
+      "plain_meaning": "Inflammation decreased earlier than fibrosis improved.",
+      "role": "evidence",
+      "assertion_type": "temporal",
+      "polarity": "positive",
+      "certainty": "reported",
+      "subject": "inflammation",
+      "predicate": "declined before",
+      "object": "fibrosis improved",
+      "population_scope": "Treatment G recipients",
+      "time_scope": "Inflammation decline preceded fibrosis improvement",
+      "analysis_population": "Not specified",
+      "estimand": "Temporal ordering of inflammation decline and fibrosis improvement",
+      "causal_role": "none",
+      "methodological_role": "none",
+      "numeric_mentions": [],
+      "inferred_details": [
+        "Temporal precedence alone does not identify whether inflammation reduction mediates the effect."
+      ],
+      "confidence": 0.99,
+      "why_it_matters": "This is the stated basis for the paragraph's strongest mechanistic conclusion.",
+      "normalized_claim": "Inflammation decreased earlier than fibrosis improved.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "because inflammation declined before fibrosis improved",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": true,
+      "issue_ids": [
+        "i2",
+        "i3"
+      ],
+      "display_status": "issue"
+    },
+    {
+      "id": "d6",
+      "sentence_index": 3,
+      "source_text": "the results prove that Treatment G prevents fibrosis exclusively through suppression of inflammation",
+      "plain_meaning": "The paragraph claims definitive proof that inflammation suppression is the only pathway by which Treatment G prevents fibrosis.",
+      "role": "conclusion",
+      "assertion_type": "exclusivity",
+      "polarity": "positive",
+      "certainty": "proves",
+      "subject": "Treatment G",
+      "predicate": "prevents fibrosis exclusively through",
+      "object": "suppression of inflammation",
+      "population_scope": "Treatment G recipients",
+      "time_scope": "Not specified",
+      "analysis_population": "Not specified",
+      "estimand": "Exclusive mediation of fibrosis prevention through inflammation suppression",
+      "causal_role": "mediator",
+      "methodological_role": "none",
+      "numeric_mentions": [],
+      "inferred_details": [
+        "The conclusion combines a causal treatment claim, a mediation claim, and an exclusivity claim."
+      ],
+      "confidence": 1.0,
+      "why_it_matters": "This definitive exclusive-mechanism conclusion conflicts with the preceding necessity claim and exceeds what temporal ordering establishes.",
+      "normalized_claim": "The paragraph claims definitive proof that inflammation suppression is the only pathway by which Treatment G prevents fibrosis.",
+      "source_fidelity_status": "exact",
+      "matched_source_span": "the results prove that Treatment G prevents fibrosis exclusively through suppression of inflammation",
+      "source_similarity": 1.0,
+      "source_span_exact": true,
+      "has_issue": true,
+      "issue_ids": [
+        "i1",
+        "i2",
+        "i3"
+      ],
+      "display_status": "issue"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "d1",
+      "target": "d2",
+      "relation": "precedes",
+      "rationale": "The first sentence says reduced inflammatory activity was followed by slower fibrosis progression.",
+      "confidence": 0.98
+    },
+    {
+      "id": "e2",
+      "source": "d3",
+      "target": "d4",
+      "relation": "evidence_for",
+      "rationale": "Equal antifibrotic effects with and without measurable inflammatory response are presented as evidence that inflammation reduction was not necessary.",
+      "confidence": 0.99
+    },
+    {
+      "id": "e3",
+      "source": "d5",
+      "target": "d6",
+      "relation": "supports_weakly",
+      "rationale": "The paragraph uses temporal precedence to support the exclusive inflammatory mechanism, but precedence alone provides only weak structural support for that conclusion.",
+      "confidence": 0.98
+    },
+    {
+      "id": "e4",
+      "source": "d5",
+      "target": "d6",
+      "relation": "does_not_establish",
+      "rationale": "Inflammation declining before fibrosis improves does not by itself prove mediation or exclude alternative pathways.",
+      "confidence": 0.99
+    },
+    {
+      "id": "e5",
+      "source": "d4",
+      "target": "d6",
+      "relation": "contradicts",
+      "rationale": "If inflammation reduction is not necessary for benefit, benefit cannot occur exclusively through inflammation suppression.",
+      "confidence": 1.0
+    },
+    {
+      "id": "e6",
+      "source": "d3",
+      "target": "d6",
+      "relation": "contradicts",
+      "rationale": "An equal antifibrotic effect in patients without a measurable inflammatory response conflicts with the asserted exclusive inflammatory pathway, as framed by the paragraph itself.",
+      "confidence": 0.97
+    }
+  ],
+  "issues": [
+    {
+      "id": "i1",
+      "issue_type": "necessity_violation",
+      "severity": "high",
+      "title": "Exclusive-mechanism conclusion conflicts with the stated lack of necessity",
+      "node_ids": [
+        "d3",
+        "d4",
+        "d6"
+      ],
+      "explanation": "The paragraph first says inflammation reduction was not necessary for benefit, then says fibrosis prevention occurs exclusively through inflammation suppression. An exclusive pathway would require that pathway to be necessary.",
+      "logical_pattern": "Not necessary for benefit ∧ exclusively through that pathway.",
+      "suggested_revision": "Remove the exclusivity claim or reconcile it with the reported benefit among patients without a measurable inflammatory response.",
+      "confidence": 1.0,
+      "generated_by": "model",
+      "issue_family": "consistency",
+      "verification_level": "formal_conflict",
+      "validation_reasons": [
+        "관련 Node 사이에 직접적인 contradicts Edge가 있습니다.",
+        "필요하지 않다는 근거와 배타적/필수 경로 결론이 함께 존재합니다."
+      ],
+      "validation_status": "formal_conflict"
+    },
+    {
+      "id": "i2",
+      "issue_type": "causal_overclaim",
+      "severity": "high",
+      "title": "Temporal precedence is treated as proof of an exclusive causal mechanism",
+      "node_ids": [
+        "d5",
+        "d6"
+      ],
+      "explanation": "The stated premise establishes that inflammation declined before fibrosis improved. It does not, on its own, prove that inflammation suppression caused the fibrosis benefit or that no other pathway contributed.",
+      "logical_pattern": "A precedes B ⇒ A is proven to be the exclusive cause or mediator of B.",
+      "suggested_revision": "State that the temporal sequence is consistent with a possible inflammatory pathway, without claiming proof or exclusivity.",
+      "confidence": 0.99,
+      "generated_by": "model",
+      "issue_family": "causal_strength",
+      "verification_level": "model_suggested_concern",
+      "validation_reasons": [
+        "관련 Node 사이에 구조적 관계가 존재하지만 현재 규칙만으로 결론을 확정하지는 못합니다."
+      ],
+      "validation_status": "model_suggested_concern"
+    },
+    {
+      "id": "i3",
+      "issue_type": "evidence_strength_mismatch",
+      "severity": "medium",
+      "title": "Suggestive observations are escalated to definitive proof",
+      "node_ids": [
+        "d2",
+        "d3",
+        "d4",
+        "d5",
+        "d6"
+      ],
+      "explanation": "The paragraph moves from observations and a conclusion explicitly qualified as “suggesting” to the definitive phrase “prove that,” without adding evidence capable of resolving the conflicting pathway interpretation.",
+      "logical_pattern": "Observed temporal and subgroup patterns ⇒ definitive proof of exclusive mechanism.",
+      "suggested_revision": "Replace “prove” with calibrated language such as “is consistent with” and acknowledge that the subgroup observation argues against necessity or exclusivity.",
+      "confidence": 0.98,
+      "generated_by": "model",
+      "issue_family": "statistical_interpretation",
+      "verification_level": "rule_confirmed_unsupported",
+      "validation_reasons": [
+        "제한적·탐색적 근거보다 강한 결론 표현이 사용됩니다."
+      ],
+      "validation_status": "rule_confirmed_unsupported"
+    }
+  ],
+  "issue_groups": [
+    {
+      "id": "g1",
+      "family": "consistency",
+      "anchor_node_id": "d4",
+      "severity": "high",
+      "title": "Exclusive-mechanism conclusion conflicts with the stated lack of necessity",
+      "summary": "The paragraph first says inflammation reduction was not necessary for benefit, then says fibrosis prevention occurs exclusively through inflammation suppression. An exclusive pathway would require that pathway to be necessary.",
+      "issue_ids": [
+        "i1"
+      ],
+      "verification_level": "formal_conflict",
+      "sub_findings": [
+        {
+          "issue_id": "i1",
+          "issue_type": "necessity_violation",
+          "title": "Exclusive-mechanism conclusion conflicts with the stated lack of necessity",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "family": "causal_strength",
+      "anchor_node_id": "d6",
+      "severity": "high",
+      "title": "Temporal precedence is treated as proof of an exclusive causal mechanism",
+      "summary": "The stated premise establishes that inflammation declined before fibrosis improved. It does not, on its own, prove that inflammation suppression caused the fibrosis benefit or that no other pathway contributed.",
+      "issue_ids": [
+        "i2"
+      ],
+      "verification_level": "model_suggested_concern",
+      "sub_findings": [
+        {
+          "issue_id": "i2",
+          "issue_type": "causal_overclaim",
+          "title": "Temporal precedence is treated as proof of an exclusive causal mechanism",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "id": "g3",
+      "family": "statistical_interpretation",
+      "anchor_node_id": "d4",
+      "severity": "medium",
+      "title": "Suggestive observations are escalated to definitive proof",
+      "summary": "The paragraph moves from observations and a conclusion explicitly qualified as “suggesting” to the definitive phrase “prove that,” without adding evidence capable of resolving the conflicting pathway interpretation.",
+      "issue_ids": [
+        "i3"
+      ],
+      "verification_level": "rule_confirmed_unsupported",
+      "sub_findings": [
+        {
+          "issue_id": "i3",
+          "issue_type": "evidence_strength_mismatch",
+          "title": "Suggestive observations are escalated to definitive proof",
+          "severity": "medium"
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "summary": {
+    "node_count": 6,
+    "edge_count": 6,
+    "issue_count": 3,
+    "issue_group_count": 3,
+    "high_severity_count": 2,
+    "issue_type_counts": {
+      "necessity_violation": 1,
+      "causal_overclaim": 1,
+      "evidence_strength_mismatch": 1
+    },
+    "issue_family_counts": {
+      "consistency": 1,
+      "causal_strength": 1,
+      "statistical_interpretation": 1
+    },
+    "verification_level_counts": {
+      "formal_conflict": 1,
+      "model_suggested_concern": 1,
+      "rule_confirmed_unsupported": 1
+    },
+    "formal_conflict_count": 1,
+    "rule_confirmed_unsupported_count": 1,
+    "structural_methodological_risk_count": 0,
+    "model_suggested_concern_count": 1,
+    "source_fidelity_warning_count": 0,
+    "structurally_supported_issue_count": 2,
+    "model_flag_only_count": 1
+  },
+  "graph_metrics": {
+    "definitions": {
+      "depth": "Longest directed root-to-node level after collapsing strongly connected components.",
+      "width": "Number of nodes at each longest-path level; maximum_width is the largest level size.",
+      "quality_note": "Width and depth measure structural complexity, not correctness by themselves."
+    },
+    "size": {
+      "node_count": 6,
+      "edge_count": 6,
+      "root_count": 3,
+      "leaf_count": 2,
+      "conclusion_count": 2,
+      "connected_component_count": 2
+    },
+    "structure": {
+      "maximum_depth": 2,
+      "mean_conclusion_depth": 1.5,
+      "median_conclusion_depth": 1.5,
+      "maximum_width": 3,
+      "width_profile": [
+        3,
+        2,
+        1
+      ],
+      "mean_branching_factor": 1.0,
+      "edge_node_ratio": 1.0,
+      "density": 0.2,
+      "has_cycle": false,
+      "root_ids": [
+        "d1",
+        "d3",
+        "d5"
+      ],
+      "leaf_ids": [
+        "d2",
+        "d6"
+      ],
+      "node_levels": {
+        "d1": 0,
+        "d2": 1,
+        "d3": 0,
+        "d4": 1,
+        "d5": 0,
+        "d6": 2
+      }
+    },
+    "reasoning_quality": {
+      "evidence_to_conclusion_ratio": 2.0,
+      "limitation_to_conclusion_ratio": 0.0,
+      "conclusions_with_issue_ratio": 1.0,
+      "grounded_edge_ratio": 0.333,
+      "weak_or_model_edge_ratio": 0.333,
+      "source_alignment_rate": 1.0,
+      "numeric_preservation_rate": 1.0,
+      "unique_relation_type_count": 5
+    },
+    "scores": {
+      "complexity": 60.5,
+      "grounding": 49.1,
+      "integrity": 82.5,
+      "fidelity": 96.7
+    }
+  },
+  "provider": "openai",
+  "api": "Responses API",
+  "model_requested": "gpt-5.6",
+  "model_returned": "gpt-5.6-sol",
+  "response_id": "resp_08d75ef471bdf464016a6da8e48198819a91b65535ca47e066",
+  "reasoning_effort": "low",
+  "latency_ms": 32135.536,
+  "chunk_latencies_ms": [
+    32135.536
+  ],
+  "usage": {
+    "input_tokens": 1795,
+    "output_tokens": 2276,
+    "total_tokens": 4071
+  },
+  "chunk_usages": [
+    {
+      "input_tokens": 1795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1792
+      },
+      "output_tokens": 2276,
+      "output_tokens_details": {
+        "reasoning_tokens": 398
+      },
+      "total_tokens": 4071
+    }
+  ],
+  "input_text": "Treatment G reduced inflammatory activity and was followed by slower fibrosis progression. The antifibrotic effect was observed equally in patients with and without a measurable inflammatory response, suggesting that inflammation reduction was not necessary for benefit. Nevertheless, because inflammation declined before fibrosis improved, the results prove that Treatment G prevents fibrosis exclusively through suppression of inflammation.",
+  "input_hash": "18f72324b55d",
+  "input_preview": "Treatment G reduced inflammatory activity and was followed by slower fibrosis progression. The antifibrotic effect was observed equally in patients with and without a measurable in",
+  "input_char_count": 442,
+  "analysis_mode": "single_pass",
+  "chunk_count": 1,
+  "chunk_char_limit": 24000,
+  "chunk_char_counts": [
+    442
+  ],
+  "api_call_count": 1,
+  "application_input_limit": null,
+  "verification_engine": "typed_graph_structural_rules",
+  "z3_used": false,
+  "prompt_version": "discussion_internal_logic_graph_v4_unbounded_chunking",
+  "run_id": "discussion_20260801_170627_468382"
+}

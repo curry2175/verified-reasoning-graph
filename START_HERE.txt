@@ -1,0 +1,41 @@
+Verified Reasoning Graph v028
+
+1) Anaconda Prompt
+
+cd /d "C:\Users\chefc\OneDrive\바탕 화면\YAI Challenge\verified_reasoning_graph_mvp_v028"
+
+2) API key 복사 또는 설정
+
+copy "..\verified_reasoning_graph_mvp_v026\.env" ".env"
+
+또는
+
+SET_OPENAI_KEY_WINDOWS.bat
+
+3) 서버
+
+RUN_WINDOWS.bat
+
+4) 실제 비정형 문단 분석
+
+http://127.0.0.1:8765/discussion-lab?v=027
+
+5) 세 데이터셋 Evaluation UI
+
+http://127.0.0.1:8765/suite-evaluation?v=027
+
+6) Evaluation Pilot: 데이터셋당 20개
+
+RUN_THREE_DATASET_EVALUATION_WINDOWS.bat
+
+7) 기존 True / False / Unknown Test Lab
+
+http://127.0.0.1:8765/test-lab?v=027
+
+8) 저장된 Graph
+
+http://127.0.0.1:8765/case-browser?v=027
+
+자세한 설명: V027_START_GUIDE.md
+평가 설계: EVALUATION_3_DATASETS_V026.md
+변경 내역: CHANGELOG_v028.md
